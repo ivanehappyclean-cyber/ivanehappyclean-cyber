@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ivane Happy Clean — Sparkling homes. Happier days.</title>
+  <meta name="description" content="Seattle & suburbs trusted cleaning: deep clean, housekeeper, move-in/out. Starting at $130. Friendly pros, satisfaction guaranteed." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #10b981;   /* emerald */
+      --brand2: #3b82f6;  /* blue */
+      --text: #0b1320;
+    }
+    /* Canvas-friendly, clean defaults */
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 0; }
+    h1, h2, h3 { font-family: 'Poppins', 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin-top: 1rem; }
+    .container { max-width: 900px; margin: auto; padding: 1rem; }
+    .muted { color: #5b6b86; }
+    section { margin-bottom: 2rem; }
+    a { color: var(--brand2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Buttons */
+    .btn { display: inline-block; padding: 0.6rem 1rem; background: linear-gradient(135deg, var(--brand), var(--brand2)); color: #fff; border-radius: 10px; text-decoration: none; font-weight: 700; box-shadow: 0 8px 20px rgba(59,130,246,.25); border: 0; }
+    .btn:active { transform: translateY(1px); }
+
+    /* Sticky “Book Now” button */
+    .sticky-book { position: fixed; right: 18px; bottom: 18px; z-index: 9999; padding: 0.85rem 1.1rem; border-radius: 999px; font-weight: 800; background: linear-gradient(135deg, var(--brand), var(--brand2)); color: #fff; box-shadow: 0 12px 28px rgba(16,185,129,.35); display: inline-flex; align-items: center; gap: .5rem; }
+    .sticky-book:hover { filter: saturate(1.1); text-decoration: none; }
+    .sticky-book svg { width: 18px; height: 18px; fill: currentColor; }
+
+    @media (max-width: 520px) { .sticky-book { bottom: 14px; right: 14px; } }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>Ivane Happy Clean</h1>
+    <nav>
+      <a href="#services">Services</a> |
+      <a href="#pricing">Pricing</a> |
+      <a href="#reviews">Reviews</a> |
+      <a href="#contact" class="btn">Get a Quote</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="hero">
+      <h2>Deep Clean • Housekeeper • Move-in/out</h2>
+      <p class="muted">Serving Seattle & suburbs. Friendly, reliable cleaners for apartments, condos and houses. Flexible scheduling, supplies included, 100% satisfaction guaranteed.</p>
+      <a class="btn" href="#contact">Book a cleaning</a>
+      <a class="btn" href="#pricing">Starting at $130</a>
+    </section>
+
+    <section id="services">
+      <h2>What we clean</h2>
+      <ul>
+        <li><strong>Housekeeper (recurring)</strong> — Weekly, bi-weekly or monthly to keep your home consistently fresh.</li>
+        <li><strong>Deep clean</strong> — Detailed top-to-bottom clean: baseboards, vents, inside appliances on request.</li>
+        <li><strong>Move-in</strong> — Sanitized and ready for keys—cabinet interiors, closets, and more.</li>
+        <li><strong>Move-out</strong> — Make landlords happy: inside fridge/oven, baseboards, drawers & shelves.</li>
+      </ul>
+    </section>
+
+    <section id="pricing">
+      <h2>Simple pricing</h2>
+      <p class="muted">Cleanings start at <strong>$130</strong>. Final quote depends on home size and condition.</p>
+      <ul>
+        <li><strong>Housekeeper (recurring)</strong> — from $130</li>
+        <li><strong>Deep clean</strong> — from $180</li>
+        <li><strong>Move-in / Move-out</strong> — from $220</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Get your free quote</h2>
+      <p class="muted">Tell us about your place and preferred date. We’ll reply promptly.</p>
+      <div style="margin-top:20px">
+        <!-- Main quote form (Form 2) -->
+        <script src="https://www.cognitoforms.com/f/seamless.js" data-key="YvfPLNyKeUWXzhg00_PfDQ" data-form="2"></script>
+      </div>
+      <h3 style="margin-top:40px">For New Clients</h3>
+      <p class="muted">If you're a new client, please complete this form first:</p>
+      <div style="margin-top:10px">
+        <!-- New clients (Form 3) -->
+        <script src="https://www.cognitoforms.com/f/seamless.js" data-key="YvfPLNyKeUWXzhg00_PfDQ" data-form="3"></script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="y"></span> Ivane Happy Clean • Licensed & Insured • <a href="#">Privacy</a> • <a href="#">Terms</a></p>
+    <p>Email: hello@ivanehappyclean.com</p>
+  </footer>
+
+  <!-- Sticky Book Now button -->
+  <a class="sticky-book" href="#contact" aria-label="Book Now">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 7v4H9V7h10m1-2H8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Zm-4 12H5V9H3v10a1 1 0 0 0 1 1h12v-2Z"/></svg>
+    Book Now
+  </a>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
